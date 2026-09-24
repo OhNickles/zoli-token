@@ -1,0 +1,15 @@
+{
+  "name": "ZOLI",
+  "symbol": "ZOLI",
+  "description": "A commemorative token celebrating Zoli, a very good ginger cat, built as a playful little project for cat lovers.",
+  "image": "https://raw.githubusercontent.com/OhNickles/zoli-token/main/zoli-token.png",
+  "properties": {
+    "files": [
+      {
+        "uri": "https://raw.githubusercontent.com/OhNickles/zoli-token/main/zoli-token.png",
+        "type": "image/png"
+      }
+    ],
+    "category": "image"
+  }
+}
