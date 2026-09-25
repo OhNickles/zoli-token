@@ -182,3 +182,24 @@ cornerZoli?.addEventListener("click", () => {
 walletButton?.addEventListener("click", () => {
   walletNote.textContent = "Wallet connection coming next — Devnet only while we build.";
 });
+
+
+document.querySelectorAll(".copy-button").forEach((button) => {
+  button.addEventListener("click", async () => {
+    const target = document.getElementById(button.dataset.copyTarget);
+    const status = document.getElementById("copy-status");
+    if (!target) return;
+
+    try {
+      await navigator.clipboard.writeText(target.textContent.trim());
+      button.textContent = "COPIED";
+      if (status) status.textContent = "Official address copied.";
+      window.setTimeout(() => {
+        button.textContent = "COPY";
+        if (status) status.textContent = "";
+      }, 1800);
+    } catch {
+      if (status) status.textContent = "Copy failed — select the address manually.";
+    }
+  });
+});
