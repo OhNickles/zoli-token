@@ -335,8 +335,9 @@ h2 {
 footer {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   gap: 24px;
-  padding: 28px 0 60px;
+  padding: 28px 150px 60px 0;
   border-top: 3px solid var(--ink);
   font-size: 12px;
 }
@@ -437,5 +438,30 @@ footer strong { font-family: "Press Start 2P", monospace; }
   .pixel-button { width: 100%; text-align: center; }
   .rank-grid { grid-template-columns: 1fr; }
   .use-case, .story-panel { padding: 28px 22px; }
-  footer { flex-direction: column; padding-bottom: 90px; }
+  footer {
+    flex-direction: column;
+    padding: 28px 0 130px;
+  }
+
+  .footer-explorer-link {
+    white-space: normal;
+  }
+}
+
+
+.footer-explorer-link {
+  display: inline-block;
+  padding: 9px 11px;
+  border: 2px solid var(--ink);
+  background: var(--paper);
+  box-shadow: 3px 3px 0 var(--ink);
+  font-family: "Press Start 2P", monospace;
+  font-size: 8px;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.footer-explorer-link:hover {
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px 0 var(--ink);
 }
