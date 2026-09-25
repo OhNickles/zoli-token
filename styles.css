@@ -374,6 +374,7 @@ footer strong { font-family: "Press Start 2P", monospace; }
   display: block;
   width: 118px;
   height: 118px;
+  background: transparent;
 }
 
 .pixel-zoli {
@@ -382,7 +383,8 @@ footer strong { font-family: "Press Start 2P", monospace; }
   height: 118px;
   object-fit: contain;
   image-rendering: pixelated;
-  filter: drop-shadow(-3px -3px 0 rgba(44,33,27,.10));
+  background: transparent;
+  filter: drop-shadow(0 6px 9px rgba(44,33,27,.18));
   user-select: none;
   pointer-events: none;
 }
