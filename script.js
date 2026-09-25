@@ -153,8 +153,6 @@ const zoliLines = [
 
 const cornerZoli = document.getElementById("corner-zoli");
 const speech = document.getElementById("zoli-speech");
-const walletButton = document.getElementById("wallet-button");
-const walletNote = document.getElementById("wallet-note");
 
 let lastLineIndex = -1;
 
@@ -179,9 +177,6 @@ cornerZoli?.addEventListener("click", () => {
   }, 2600);
 });
 
-walletButton?.addEventListener("click", () => {
-  walletNote.textContent = "Wallet connection coming next — Devnet only while we build.";
-});
 
 
 document.querySelectorAll(".copy-button").forEach((button) => {
