@@ -465,3 +465,338 @@ footer strong { font-family: "Press Start 2P", monospace; }
   transform: translate(1px, 1px);
   box-shadow: 2px 2px 0 var(--ink);
 }
+
+
+/* Trust & transparency layer */
+.top-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.top-link {
+  font-family: "Press Start 2P", monospace;
+  font-size: 8px;
+  border-bottom: 2px solid transparent;
+  padding: 8px 2px;
+}
+
+.top-link:hover { border-bottom-color: var(--orange); }
+
+.trust-section {
+  margin: 96px 0 26px;
+}
+
+.section-heading {
+  max-width: 850px;
+  margin-bottom: 30px;
+}
+
+.section-heading > p:last-child {
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.trust-card {
+  min-height: 205px;
+  padding: 24px;
+  border: 3px solid var(--ink);
+  background: rgba(248,230,197,.94);
+  box-shadow: 5px 5px 0 var(--ink);
+}
+
+.trust-icon {
+  display: inline-grid;
+  place-items: center;
+  min-width: 42px;
+  height: 42px;
+  margin-bottom: 20px;
+  padding: 0 8px;
+  border: 2px solid var(--ink);
+  background: var(--gold);
+  font-family: "Press Start 2P", monospace;
+  font-size: 10px;
+}
+
+.trust-card b {
+  display: block;
+  font-family: "Press Start 2P", monospace;
+  font-size: 9px;
+  line-height: 1.6;
+}
+
+.trust-card p {
+  margin: 14px 0 0;
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+.verify-panel {
+  display: grid;
+  grid-template-columns: .8fr 1.2fr;
+  gap: 36px;
+  margin: 26px 0;
+  padding: 38px;
+}
+
+.verify-list { min-width: 0; }
+
+.verify-row {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: center;
+  padding: 13px 0;
+  border-bottom: 2px solid rgba(44,33,27,.25);
+}
+
+.verify-row > span {
+  font-family: "Press Start 2P", monospace;
+  font-size: 8px;
+}
+
+.verify-row code {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 11px;
+}
+
+.verify-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 18px;
+}
+
+.mini-button {
+  appearance: none;
+  display: inline-block;
+  padding: 9px 10px;
+  border: 2px solid var(--ink);
+  background: var(--cream);
+  color: var(--ink);
+  box-shadow: 3px 3px 0 var(--ink);
+  font-family: "Press Start 2P", monospace;
+  font-size: 7px;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.mini-button:hover {
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px 0 var(--ink);
+}
+
+.copy-status {
+  min-height: 18px;
+  margin: 12px 0 0;
+  font-size: 11px;
+  opacity: .7;
+}
+
+.goodwill-panel {
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 32px;
+  margin: 26px 0;
+  padding: 42px;
+}
+
+.goodwill-copy > p:not(.eyebrow) {
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.donation-ledger {
+  border: 3px solid var(--ink);
+  background: var(--cream);
+}
+
+.ledger-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px;
+  border-bottom: 3px solid var(--ink);
+  background: var(--gold);
+  font-family: "Press Start 2P", monospace;
+  font-size: 7px;
+}
+
+.ledger-empty {
+  display: flex;
+  min-height: 130px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.ledger-empty strong {
+  font-family: "Press Start 2P", monospace;
+  font-size: 11px;
+}
+
+.ledger-empty span {
+  font-size: 11px;
+  opacity: .65;
+}
+
+.donation-ledger > p {
+  margin: 0;
+  padding: 14px;
+  border-top: 2px solid rgba(44,33,27,.25);
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.security-strip {
+  margin: 26px 0;
+  padding: 20px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  border: 3px solid var(--ink);
+  background: var(--ink);
+  color: var(--cream);
+  box-shadow: 6px 6px 0 var(--orange);
+}
+
+.security-strip div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.security-strip b,
+.security-strip a {
+  font-family: "Press Start 2P", monospace;
+  font-size: 8px;
+  line-height: 1.5;
+}
+
+.security-strip span {
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.footer-links {
+  max-width: 560px;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  font-family: "Press Start 2P", monospace;
+  font-size: 7px;
+  line-height: 1.5;
+}
+
+.footer-links a { border-bottom: 1px solid transparent; }
+.footer-links a:hover { border-bottom-color: var(--orange); }
+
+/* Info pages */
+.info-page {
+  width: min(920px, calc(100% - 32px));
+  margin: 70px auto 100px;
+}
+
+.info-page .back-link {
+  display: inline-block;
+  margin-bottom: 34px;
+  font-family: "Press Start 2P", monospace;
+  font-size: 8px;
+}
+
+.info-page h1 {
+  margin-bottom: 22px;
+  font-size: clamp(28px, 5vw, 52px);
+}
+
+.info-page .lede {
+  max-width: 780px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.info-block {
+  margin-top: 24px;
+  padding: 28px;
+  border: 3px solid var(--ink);
+  background: var(--paper);
+  box-shadow: 6px 6px 0 var(--ink);
+}
+
+.info-block h2 {
+  font-size: 15px;
+  margin-bottom: 18px;
+}
+
+.info-block p,
+.info-block li {
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.info-block code {
+  overflow-wrap: anywhere;
+}
+
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.info-table th,
+.info-table td {
+  padding: 12px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 2px solid rgba(44,33,27,.22);
+}
+
+.info-table th {
+  width: 31%;
+  font-family: "Press Start 2P", monospace;
+  font-size: 7px;
+}
+
+.status-live,
+.status-pending {
+  display: inline-block;
+  padding: 5px 7px;
+  border: 2px solid var(--ink);
+  font-family: "Press Start 2P", monospace;
+  font-size: 6px;
+}
+
+.status-live { background: #dce8ce; }
+.status-pending { background: var(--gold); }
+
+@media (max-width: 850px) {
+  .top-link { display: none; }
+  .trust-grid { grid-template-columns: repeat(2, 1fr); }
+  .verify-panel,
+  .goodwill-panel { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 540px) {
+  .trust-grid { grid-template-columns: 1fr; }
+  .verify-row { grid-template-columns: 1fr auto; }
+  .verify-row > span { grid-column: 1 / -1; }
+  .security-strip { flex-direction: column; align-items: flex-start; }
+  .footer-links { justify-content: flex-start; }
+  .info-block { padding: 21px; }
+  .info-table, .info-table tbody, .info-table tr, .info-table th, .info-table td { display: block; }
+  .info-table th { width: auto; padding-bottom: 3px; }
+  .info-table td { padding-top: 3px; }
+}
