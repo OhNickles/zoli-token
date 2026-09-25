@@ -115,3 +115,16 @@ ZOLI is not:
 - visually chaotic
 
 The design test is simple: it should look like a tiny polished retro game interface that happens to contain a real Solana project.
+
+
+## 7. Wallet experience
+
+Wallet UI follows the same system rather than introducing a fourth visual language.
+
+- Wallet picker: Surface 1 / Card
+- Wallet choices and connected state: Surface 2 / Flat
+- Security warnings, if needed: Surface 3 / Dark
+- The main CTA changes from `CONNECT WALLET` to a shortened connected address after connection.
+- Connection must never request or handle a seed phrase/private key.
+- Full addresses are shown only where useful; compact addresses are preferred in primary UI.
+- Wallet discovery uses the Wallet Standard browser registration protocol.
