@@ -755,3 +755,197 @@ footer {
   .info-table th { width: auto; padding-bottom: 3px; }
   .info-table td { padding-top: 3px; }
 }
+
+
+/* Wallet connection — uses the existing Card + Flat surfaces only */
+.wallet-session {
+  margin-top: 22px;
+  max-width: 620px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.wallet-session-copy {
+  min-width: 0;
+  display: grid;
+  gap: 6px;
+}
+
+.wallet-session-copy > span {
+  color: var(--brown);
+  font-family: "Press Start 2P", monospace;
+  font-size: 6px;
+}
+
+.wallet-session-copy > strong {
+  font-family: "Press Start 2P", monospace;
+  font-size: 8px;
+  line-height: 1.5;
+}
+
+.wallet-session-copy code {
+  max-width: 390px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 11px;
+}
+
+.wallet-dialog {
+  width: min(560px, calc(100% - 28px));
+  max-height: min(720px, calc(100vh - 40px));
+  padding: 28px;
+  color: var(--ink);
+  overflow: auto;
+}
+
+.wallet-dialog::backdrop {
+  background: rgba(44,33,27,.66);
+  backdrop-filter: blur(3px);
+}
+
+.wallet-dialog-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.wallet-dialog-head h2 {
+  margin-bottom: 0;
+  font-size: clamp(18px, 4vw, 27px);
+}
+
+.wallet-close {
+  appearance: none;
+  flex: 0 0 auto;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border: var(--border-light);
+  background: var(--cream);
+  color: var(--ink);
+  font: 25px/1 "DM Mono", monospace;
+  cursor: pointer;
+}
+
+.wallet-explainer {
+  margin: 22px 0;
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+.wallet-options {
+  display: grid;
+  gap: 10px;
+}
+
+.wallet-option {
+  appearance: none;
+  width: 100%;
+  padding: 14px;
+  display: grid;
+  grid-template-columns: 38px 1fr auto;
+  gap: 13px;
+  align-items: center;
+  text-align: left;
+  color: var(--ink);
+  cursor: pointer;
+  font: inherit;
+}
+
+.wallet-option:hover {
+  background: var(--paper);
+}
+
+.wallet-option:disabled {
+  opacity: .52;
+  cursor: not-allowed;
+}
+
+.wallet-option img,
+.wallet-icon-placeholder {
+  width: 38px;
+  height: 38px;
+  border: var(--border-light);
+  background: var(--paper);
+}
+
+.wallet-icon-placeholder {
+  display: grid;
+  place-items: center;
+  font-family: "Press Start 2P", monospace;
+  font-size: 8px;
+}
+
+.wallet-option-copy {
+  min-width: 0;
+  display: grid;
+  gap: 5px;
+}
+
+.wallet-option-copy strong {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: "Press Start 2P", monospace;
+  font-size: 8px;
+}
+
+.wallet-option-copy span,
+.wallet-option-state {
+  font-size: 10px;
+  color: var(--muted);
+}
+
+.wallet-option-state {
+  font-family: "Press Start 2P", monospace;
+  font-size: 6px;
+}
+
+.wallet-empty {
+  padding: 18px;
+  font-size: 12px;
+  line-height: 1.75;
+}
+
+.wallet-dialog-status {
+  min-height: 18px;
+  margin: 14px 0 0;
+  font-size: 11px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+@media (max-width: 560px) {
+  .wallet-session {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .wallet-session .mini-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .wallet-dialog {
+    padding: 22px;
+  }
+
+  .wallet-option {
+    grid-template-columns: 34px 1fr;
+  }
+
+  .wallet-option img,
+  .wallet-icon-placeholder {
+    width: 34px;
+    height: 34px;
+  }
+
+  .wallet-option-state {
+    grid-column: 2;
+  }
+}
