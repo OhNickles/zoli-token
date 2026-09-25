@@ -47,7 +47,16 @@
           <button class="pixel-button primary" type="button" id="wallet-button">CONNECT WALLET</button>
           <a class="pixel-button ghost" href="#about">MEET ZOLI</a>
         </div>
-        <p class="build-note" id="wallet-note">Wallet connection is the next build step. Devnet only for now.</p>
+        <p class="build-note" id="wallet-note">Connect a Solana wallet to enter ZOLI. Devnet only for now.</p>
+
+        <div class="wallet-session surface-flat" id="wallet-session" hidden>
+          <div class="wallet-session-copy">
+            <span>CONNECTED WALLET</span>
+            <strong id="wallet-provider">SOLANA WALLET</strong>
+            <code id="wallet-address-display"></code>
+          </div>
+          <button class="mini-button" id="disconnect-wallet" type="button">DISCONNECT</button>
+        </div>
       </div>
 
       <div class="coin-stage" aria-label="ZOLI commemorative coin artwork">
@@ -254,6 +263,24 @@
     </footer>
   </main>
 
+  <dialog class="wallet-dialog surface-card" id="wallet-dialog" aria-labelledby="wallet-dialog-title">
+    <div class="wallet-dialog-head">
+      <div>
+        <p class="eyebrow">WALLET ACCESS</p>
+        <h2 id="wallet-dialog-title">CONNECT WALLET.</h2>
+      </div>
+      <button class="wallet-close" id="wallet-close" type="button" aria-label="Close wallet selector">×</button>
+    </div>
+
+    <p class="wallet-explainer">
+      Choose a Wallet Standard-compatible Solana wallet. Connecting shares your public wallet address only.
+      ZOLI will never ask for your seed phrase or private key.
+    </p>
+
+    <div class="wallet-options" id="wallet-options"></div>
+    <p class="wallet-dialog-status" id="wallet-dialog-status" aria-live="polite"></p>
+  </dialog>
+
   <button class="corner-zoli" id="corner-zoli" type="button" aria-label="A tiny Zoli is hiding here">
     <span class="speech" id="zoli-speech">...meow?</span>
     <span class="zoli-sprite-wrap" aria-hidden="true">
@@ -262,5 +289,6 @@
   </button>
 
   <script src="./script.js"></script>
+  <script type="module" src="./wallet.js"></script>
 </body>
 </html>
