@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ZOLI — Transparency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="info-page">
+    <a class="back-link" href="./index.html">← BACK TO ZOLI</a>
+    <p class="eyebrow">PUBLIC RECORD // DEVNET</p>
+    <h1>TRANSPARENCY.</h1>
+    <p class="lede">ZOLI is being built in public. This page separates facts that are true now from commitments that are still pending.</p>
+
+    <section class="info-block">
+      <h2>ON-CHAIN FACTS</h2>
+      <table class="info-table">
+        <tr><th>NETWORK</th><td>Solana Devnet <span class="status-live">LIVE</span></td></tr>
+        <tr><th>MINT</th><td><code>7Jg5G78983maURLsyD7sDr226Rdmwv24wBKH2nGZNfzQ</code></td></tr>
+        <tr><th>SUPPLY</th><td>1,000,000,000 ZOLI currently minted</td></tr>
+        <tr><th>DECIMALS</th><td>6</td></tr>
+        <tr><th>TOKEN PROGRAM</th><td>Standard SPL Token Program</td></tr>
+        <tr><th>TRANSFER TAX</th><td>None at the token-program level</td></tr>
+        <tr><th>MINT AUTHORITY</th><td>Active during development <span class="status-pending">NOT LOCKED</span></td></tr>
+        <tr><th>METADATA</th><td>Metaplex metadata attached and currently updateable</td></tr>
+      </table>
+    </section>
+
+    <section class="info-block">
+      <h2>TREASURY & DISTRIBUTION</h2>
+      <p>Project treasury wallet:</p>
+      <p><code>GVca4tVkyHFSKh2Htj7Ur2Adp59y89rJcxAHoM83U9VR</code></p>
+      <p>Development snapshot after ZOLI's first transfer: 999,990,000 ZOLI remained in the treasury and 10,000 ZOLI were sent to a disposable Devnet test recipient to prove wallet-to-wallet transfer functionality. Explorer records are the source of truth if balances change.</p>
+      <p><a class="mini-button" href="https://explorer.solana.com/address/GVca4tVkyHFSKh2Htj7Ur2Adp59y89rJcxAHoM83U9VR?cluster=devnet" target="_blank" rel="noopener noreferrer">VIEW TREASURY ↗</a></p>
+    </section>
+
+    <section class="info-block">
+      <h2>AUTHORITY POLICY</h2>
+      <p>The current Devnet mint authority remains active because ZOLI is still being developed and tested. The site will not describe the supply as permanently fixed while that authority exists.</p>
+      <p>Any decision to revoke an on-chain authority will be tested first and documented before it is made. Authority revocation can be irreversible.</p>
+    </section>
+
+    <section class="info-block">
+      <h2>GOOD CATS HELP OTHER CATS</h2>
+      <p><strong>No public fundraising is active today.</strong> ZOLI intends to support reputable cat rescue or stray-cat organisations if the project begins generating funds.</p>
+      <p>Before that happens, this page will identify the beneficiary, state exactly what percentage or formula applies, explain any costs or deductions, and maintain a public donation ledger with dates, amounts and evidence.</p>
+      <table class="info-table">
+        <tr><th>PARTNER</th><td>Not selected yet <span class="status-pending">PENDING</span></td></tr>
+        <tr><th>DONATION FORMULA</th><td>Not set yet <span class="status-pending">PENDING</span></td></tr>
+        <tr><th>DONATIONS MADE</th><td>None</td></tr>
+        <tr><th>PUBLIC FUNDRAISING</th><td>Not active</td></tr>
+      </table>
+    </section>
+
+    <section class="info-block">
+      <h2>SOURCE & VERIFICATION</h2>
+      <p>The website and metadata are maintained in the public GitHub repository. The mint can be inspected independently on Solana Explorer.</p>
+      <p class="verify-actions">
+        <a class="mini-button" href="https://github.com/OhNickles/zoli-token" target="_blank" rel="noopener noreferrer">GITHUB ↗</a>
+        <a class="mini-button" href="https://explorer.solana.com/address/7Jg5G78983maURLsyD7sDr226Rdmwv24wBKH2nGZNfzQ?cluster=devnet" target="_blank" rel="noopener noreferrer">SOLANA EXPLORER ↗</a>
+        <a class="mini-button" href="https://raw.githubusercontent.com/OhNickles/zoli-token/main/metadata.json" target="_blank" rel="noopener noreferrer">TOKEN METADATA ↗</a>
+      </p>
+    </section>
+  </main>
+</body>
+</html>
